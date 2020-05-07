@@ -16,7 +16,7 @@ import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 
-public class VentanaRegistro extends JFrame {
+public class Registro extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txt_nombre;
@@ -34,7 +34,7 @@ public class VentanaRegistro extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					VentanaRegistro frame = new VentanaRegistro();
+					Registro frame = new Registro();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -46,9 +46,9 @@ public class VentanaRegistro extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public VentanaRegistro() {
+	public Registro() {
 		setTitle("AppChat");
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\pedro\\Downloads\\chat_talk_conversation_sms_bubble_icon-icons.com_59983.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\pedro\\Desktop\\2ºCuatri2020\\3º\\Tecnologias de Desarrollo de Software\\Proyecto_Git_TDS\\git_tds\\ProyectoAppChat\\src\\main\\resources\\chat_talk_conversation_sms_bubble_icon-icons.com_59983.png"));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 500, 405);
 		setLocationRelativeTo(null);
@@ -101,7 +101,7 @@ public class VentanaRegistro extends JFrame {
 		
 		JPanel panel_var = new JPanel();
 		panel_centro.add(panel_var, BorderLayout.CENTER);
-		panel_var.setLayout(new BorderLayout(0, 0));
+		panel_var.setLayout(new BorderLayout(5, 5));
 		
 		JPanel panel_telefono = new JPanel();
 		FlowLayout flowLayout_4 = (FlowLayout) panel_telefono.getLayout();
@@ -126,12 +126,13 @@ public class VentanaRegistro extends JFrame {
 		flowLayout.setAlignment(FlowLayout.LEFT);
 		panel_var2.add(panel_nacimiento, BorderLayout.NORTH);
 		
-		JLabel lblFechaNacimiento = new JLabel("              Fecha Nacimiento:");
+		JLabel lblFechaNacimiento = new JLabel("                Fecha Nacimiento:");
+		lblFechaNacimiento.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_nacimiento.add(lblFechaNacimiento);
 		
 		txt_nacimiento = new JTextField();
 		lblFechaNacimiento.setLabelFor(txt_nacimiento);
-		txt_nacimiento.setColumns(12);
+		txt_nacimiento.setColumns(20);
 		panel_nacimiento.add(txt_nacimiento);
 		
 		JPanel panel_var3 = new JPanel();
@@ -151,17 +152,18 @@ public class VentanaRegistro extends JFrame {
 		panel_email.add(txt_email);
 		txt_email.setColumns(20);
 		
-		JPanel panel = new JPanel();
-		FlowLayout flowLayout_2 = (FlowLayout) panel.getLayout();
-		flowLayout_2.setAlignOnBaseline(true);
-		panel_var3.add(panel, BorderLayout.CENTER);
+		JPanel panel_usuario = new JPanel();
+		FlowLayout fl_panel_usuario = (FlowLayout) panel_usuario.getLayout();
+		fl_panel_usuario.setVgap(7);
+		fl_panel_usuario.setAlignOnBaseline(true);
+		panel_var3.add(panel_usuario, BorderLayout.CENTER);
 		
-		JLabel lblUsuario = new JLabel("Usuario:");
-		panel.add(lblUsuario);
+		JLabel lblUsuario = new JLabel(" Usuario:");
+		panel_usuario.add(lblUsuario);
 		
 		txt_usuario = new JTextField();
 		lblUsuario.setLabelFor(txt_usuario);
-		panel.add(txt_usuario);
+		panel_usuario.add(txt_usuario);
 		txt_usuario.setColumns(20);
 		
 		JPanel panel_contraseña = new JPanel();
@@ -169,13 +171,13 @@ public class VentanaRegistro extends JFrame {
 		flowLayout_5.setAlignment(FlowLayout.LEFT);
 		panel_var2.add(panel_contraseña, BorderLayout.SOUTH);
 		
-		JLabel lblContrasea = new JLabel("                         Contraseña:");
+		JLabel lblContrasea = new JLabel("                           Contraseña:");
 		lblContrasea.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_contraseña.add(lblContrasea);
 		
 		txt_pass = new JPasswordField();
 		lblContrasea.setLabelFor(txt_pass);
-		txt_pass.setColumns(10);
+		txt_pass.setColumns(20);
 		panel_contraseña.add(txt_pass);
 		
 		JPanel panel_confirmacion = new JPanel();
@@ -183,12 +185,12 @@ public class VentanaRegistro extends JFrame {
 		flowLayout_6.setAlignment(FlowLayout.LEFT);
 		panel_var.add(panel_confirmacion, BorderLayout.SOUTH);
 		
-		JLabel lblConfirmarContrasea = new JLabel("     Confirmar Contraseña:");
+		JLabel lblConfirmarContrasea = new JLabel("       Confirmar Contraseña:");
 		panel_confirmacion.add(lblConfirmarContrasea);
 		
 		txt_pass2 = new JPasswordField();
 		lblConfirmarContrasea.setLabelFor(txt_pass2);
-		txt_pass2.setColumns(10);
+		txt_pass2.setColumns(20);
 		panel_confirmacion.add(txt_pass2);
 		
 		JPanel panel_warning = new JPanel();
@@ -196,7 +198,7 @@ public class VentanaRegistro extends JFrame {
 		flowLayout_7.setAlignOnBaseline(true);
 		panel_centro.add(panel_warning, BorderLayout.SOUTH);
 		
-		JLabel lblLosCampos = new JLabel("                  *Los campos indicados son obligatorios");
+		JLabel lblLosCampos = new JLabel("*Los campos indicados son obligatorios");
 		lblLosCampos.setForeground(Color.RED);
 		panel_warning.add(lblLosCampos);
 	}

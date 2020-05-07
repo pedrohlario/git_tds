@@ -18,7 +18,7 @@ import java.awt.Toolkit;
 import javax.swing.border.MatteBorder;
 import javax.swing.border.TitledBorder;
 
-public class Aplicacion {
+public class Login {
 
 	private JFrame VentanaLogin;
 	private JTextField log_usuario;
@@ -31,7 +31,7 @@ public class Aplicacion {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Aplicacion window = new Aplicacion();
+					Login window = new Login();
 					window.VentanaLogin.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -43,7 +43,7 @@ public class Aplicacion {
 	/**
 	 * Create the application.
 	 */
-	public Aplicacion() {
+	public Login() {
 		initialize();
 	}
 
@@ -52,7 +52,7 @@ public class Aplicacion {
 	 */
 	private void initialize() {
 		VentanaLogin = new JFrame();
-		VentanaLogin.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\pedro\\Downloads\\chat_talk_conversation_sms_bubble_icon-icons.com_59983.png"));
+		VentanaLogin.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\pedro\\Desktop\\2ºCuatri2020\\3º\\Tecnologias de Desarrollo de Software\\Proyecto_Git_TDS\\git_tds\\ProyectoAppChat\\src\\main\\resources\\chat_talk_conversation_sms_bubble_icon-icons.com_59983.png"));
 		VentanaLogin.setTitle("AppChat");
 		VentanaLogin.setBounds(100, 100, 500, 350);
 		//Para que se centre la ventana
@@ -87,7 +87,6 @@ public class Aplicacion {
 		panel_inferior.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
 		panel_inferior.setBackground(new Color(65, 105, 225));
 		FlowLayout fl_panel_inferior = (FlowLayout) panel_inferior.getLayout();
-		fl_panel_inferior.setAlignment(FlowLayout.RIGHT);
 		fl_panel_inferior.setVgap(20);
 		fl_panel_inferior.setHgap(10);
 		VentanaLogin.getContentPane().add(panel_inferior, BorderLayout.SOUTH);
@@ -112,7 +111,7 @@ public class Aplicacion {
 		panel_centro.setLayout(new FlowLayout(FlowLayout.LEFT, 25, 23));
 		
 		JLabel lblUsuario = new JLabel("");
-		lblUsuario.setIcon(new ImageIcon("C:\\Users\\pedro\\Downloads\\round-account-button-with-user-inside_icon-icons.com_72596.png"));
+		lblUsuario.setIcon(new ImageIcon("C:\\Users\\pedro\\Desktop\\2ºCuatri2020\\3º\\Tecnologias de Desarrollo de Software\\Proyecto_Git_TDS\\git_tds\\ProyectoAppChat\\src\\main\\resources\\round-account-button-with-user-inside_icon-icons.com_72596.png"));
 		lblUsuario.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		panel_centro.add(lblUsuario);
 		
@@ -122,7 +121,7 @@ public class Aplicacion {
 		log_usuario.setColumns(10);
 		
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon("C:\\Users\\pedro\\Downloads\\password_3715.png"));
+		label.setIcon(new ImageIcon("C:\\Users\\pedro\\Desktop\\2ºCuatri2020\\3º\\Tecnologias de Desarrollo de Software\\Proyecto_Git_TDS\\git_tds\\ProyectoAppChat\\src\\main\\resources\\password_3715.png"));
 		panel_centro.add(label);
 		
 		log_contraseña = new JPasswordField();
