@@ -15,13 +15,17 @@ import javax.swing.JButton;
 import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
+import com.jgoodies.forms.factories.DefaultComponentFactory;
+import com.toedter.calendar.JCalendar;
+import com.toedter.components.JLocaleChooser;
+import com.toedter.calendar.JDateChooser;
+import java.awt.Dimension;
 
 public class Registro extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txt_nombre;
 	private JTextField txt_telefono;
-	private JTextField txt_nacimiento;
 	private JTextField txt_email;
 	private JTextField txt_usuario;
 	private JPasswordField txt_pass;
@@ -122,6 +126,7 @@ public class Registro extends JFrame {
 		
 		JPanel panel_nacimiento = new JPanel();
 		FlowLayout flowLayout = (FlowLayout) panel_nacimiento.getLayout();
+		flowLayout.setVgap(0);
 		flowLayout.setAlignOnBaseline(true);
 		flowLayout.setAlignment(FlowLayout.LEFT);
 		panel_var2.add(panel_nacimiento, BorderLayout.NORTH);
@@ -130,10 +135,10 @@ public class Registro extends JFrame {
 		lblFechaNacimiento.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_nacimiento.add(lblFechaNacimiento);
 		
-		txt_nacimiento = new JTextField();
-		lblFechaNacimiento.setLabelFor(txt_nacimiento);
-		txt_nacimiento.setColumns(20);
-		panel_nacimiento.add(txt_nacimiento);
+		JDateChooser dateChooser = new JDateChooser();
+		dateChooser.setPreferredSize(new Dimension(245, 22));
+		dateChooser.setToolTipText("");
+		panel_nacimiento.add(dateChooser);
 		
 		JPanel panel_var3 = new JPanel();
 		panel_var2.add(panel_var3, BorderLayout.CENTER);
@@ -154,7 +159,6 @@ public class Registro extends JFrame {
 		
 		JPanel panel_usuario = new JPanel();
 		FlowLayout fl_panel_usuario = (FlowLayout) panel_usuario.getLayout();
-		fl_panel_usuario.setVgap(7);
 		fl_panel_usuario.setAlignOnBaseline(true);
 		panel_var3.add(panel_usuario, BorderLayout.CENTER);
 		

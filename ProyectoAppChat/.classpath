@@ -8,9 +8,9 @@
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
@@ -23,5 +23,10 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/pedro/Desktop/2ºCuatri2020/3º/Tecnologias de Desarrollo de Software/Proyecto_Git_TDS/git_tds/ProyectoAppChat/src/main/resources/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pedro/Desktop/2ºCuatri2020/3º/Tecnologias de Desarrollo de Software/Proyecto_Git_TDS/git_tds/ProyectoAppChat/src/main/resources/jgoodies-common-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pedro/Desktop/2ºCuatri2020/3º/Tecnologias de Desarrollo de Software/Proyecto_Git_TDS/git_tds/ProyectoAppChat/src/main/resources/jgoodies-looks-2.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pedro/Desktop/2ºCuatri2020/3º/Tecnologias de Desarrollo de Software/Proyecto_Git_TDS/git_tds/ProyectoAppChat/src/main/resources/junit-4.6.jar"/>
+	<classpathentry kind="lib" path="forms-1.3.0.jar" sourcepath="forms-1.3.0-src.zip"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
