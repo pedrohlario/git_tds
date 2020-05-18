@@ -31,7 +31,7 @@ public class Principal {
 	}
 
 	/**
-	 * Create the application.
+	 *JAJAJAJAJA QUE FIESTA ES HABLAR POR GITHUB
 	 */
 	public Principal() {
 		initialize();
