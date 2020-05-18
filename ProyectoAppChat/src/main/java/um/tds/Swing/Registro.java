@@ -52,7 +52,7 @@ public class Registro extends JFrame {
 	 */
 	public Registro() {
 		setTitle("AppChat");
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\pedro\\Desktop\\2ºCuatri2020\\3º\\Tecnologias de Desarrollo de Software\\Proyecto_Git_TDS\\git_tds\\ProyectoAppChat\\src\\main\\resources\\chat_talk_conversation_sms_bubble_icon-icons.com_59983.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Registro.class.getResource("/resources/chat_talk_conversation_sms_bubble_icon-icons.com_59983.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 500, 405);
 		setLocationRelativeTo(null);

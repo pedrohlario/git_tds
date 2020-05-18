@@ -52,7 +52,7 @@ public class Login {
 	 */
 	private void initialize() {
 		VentanaLogin = new JFrame();
-		VentanaLogin.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\pedro\\Desktop\\2ºCuatri2020\\3º\\Tecnologias de Desarrollo de Software\\Proyecto_Git_TDS\\git_tds\\ProyectoAppChat\\src\\main\\resources\\chat_talk_conversation_sms_bubble_icon-icons.com_59983.png"));
+		VentanaLogin.setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/resources/chat_talk_conversation_sms_bubble_icon-icons.com_59983.png")));
 		VentanaLogin.setTitle("AppChat");
 		VentanaLogin.setBounds(100, 100, 500, 350);
 		//Para que se centre la ventana
@@ -111,7 +111,7 @@ public class Login {
 		panel_centro.setLayout(new FlowLayout(FlowLayout.LEFT, 25, 23));
 		
 		JLabel lblUsuario = new JLabel("");
-		lblUsuario.setIcon(new ImageIcon("C:\\Users\\pedro\\Desktop\\2ºCuatri2020\\3º\\Tecnologias de Desarrollo de Software\\Proyecto_Git_TDS\\git_tds\\ProyectoAppChat\\src\\main\\resources\\round-account-button-with-user-inside_icon-icons.com_72596.png"));
+		lblUsuario.setIcon(new ImageIcon(Login.class.getResource("/resources/round-account-button-with-user-inside_icon-icons.com_72596.png")));
 		lblUsuario.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		panel_centro.add(lblUsuario);
 		
@@ -121,7 +121,7 @@ public class Login {
 		log_usuario.setColumns(10);
 		
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon("C:\\Users\\pedro\\Desktop\\2ºCuatri2020\\3º\\Tecnologias de Desarrollo de Software\\Proyecto_Git_TDS\\git_tds\\ProyectoAppChat\\src\\main\\resources\\password_3715.png"));
+		label.setIcon(new ImageIcon(Login.class.getResource("/resources/password_3715.png")));
 		panel_centro.add(label);
 		
 		log_contraseña = new JPasswordField();

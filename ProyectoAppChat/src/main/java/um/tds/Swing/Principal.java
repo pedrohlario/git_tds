@@ -8,6 +8,7 @@ import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import javax.swing.JSplitPane;
 import javax.swing.JLabel;
+import java.awt.Toolkit;
 
 public class Principal {
 
@@ -41,6 +42,7 @@ public class Principal {
 	 */
 	private void initialize() {
 		frame = new JFrame();
+		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(Principal.class.getResource("/resources/chat_talk_conversation_sms_bubble_icon-icons.com_59983.png")));
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
