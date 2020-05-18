@@ -15,7 +15,7 @@ public class Principal {
 	private JFrame frame;
 
 	/**
-	 * Launch thJAJAJA HOLIIIII
+	 * Launch thJAJAJA HOLIIIIIDDDD
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
