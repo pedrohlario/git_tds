@@ -28,5 +28,6 @@
 	<classpathentry kind="lib" path="src/main/java/resources/junit-4.6.jar"/>
 	<classpathentry kind="lib" path="src/main/java/resources/jcalendar-1.4.jar"/>
 	<classpathentry kind="lib" path="src/main/java/resources/jgoodies-common-1.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="src/main/java/resources/chatWindowLib.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
